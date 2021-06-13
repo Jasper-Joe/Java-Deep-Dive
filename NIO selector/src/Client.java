@@ -34,7 +34,9 @@ public class Client {
         buffer = ByteBuffer.wrap(msg.getBytes());
         String response = null;
         try {
+
             client.write(buffer);
+//
             buffer.clear();
             client.read(buffer);
             response = new String(buffer.array()).trim();
