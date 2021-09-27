@@ -15,5 +15,11 @@ public class Main {
         boolean b2 = c1.isInstance(num); // false
         System.out.println(b1);
         System.out.println(b2);
+        // isInterface
+        Class c5 = Class.forName("java.lang.Runnable");
+        boolean b3 = c5.isInterface();
+        boolean b4 = c1.isInterface();
+        System.out.println(b3); // true
+        System.out.println(b4); // false
     }
 }
