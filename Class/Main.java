@@ -8,5 +8,12 @@ public class Main {
         System.out.println(c2.toString()); // int
         System.out.println(c3.toString()); // void
         System.out.println(c4.toString()); // class Main
+        // isInstannce
+        String s = "this is string";
+        Integer num = 100;
+        boolean b1 = c1.isInstance(s); // true
+        boolean b2 = c1.isInstance(num); // false
+        System.out.println(b1);
+        System.out.println(b2);
     }
 }
